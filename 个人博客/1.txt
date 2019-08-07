@@ -1,0 +1,27 @@
+文章的字段
+
+_id     主键、标识
+分类    sort
+大标题  title
+作者    author
+日期    date
+内容    content  
+简介    intro
+评论    <comment>
+
+
+评论comment的字段
+
+_id
+fid   哪来的id 那篇文章
+content
+author
+date
+state [0:'正在等待审核',1:'审核通过',2:'审核不通过']
+{ 
+    "_id" : ObjectId("5b767152a733a350da3e937a"),
+    "fid" : "5b767132a733a350da3e9379",
+    "author" : "skipper@qq.com",
+    "content" : "假的！这个世界是没有爱情的！",
+    "date" : "2018-08-17 14-55-14" 
+}
